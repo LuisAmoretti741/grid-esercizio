@@ -1,0 +1,151 @@
+*{
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* height: 150vh; */
+}
+
+.container{
+    /* gap: 10px; */
+    column-gap: 20px;
+    row-gap: 1px;
+    display: grid;
+    grid-template-rows: 10vh 5vh 80vh 20vh 10vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "menu menu menu menu"
+    "main1 main1 main2 main2"
+    "minifooter1 minifooter2 minifooter3 minifooter4"
+    "footer1 footer1 footer2 footer2";
+}
+
+/* .container-main-2{
+    display: grid;
+    grid-template-columns: 100vh;
+    grid-template-rows: 100;
+} */
+
+.header{
+    grid-area: header;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.main1{
+    column-gap: 10px;
+    row-gap: 16px;
+    grid-area: main1;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". element-main1 ."
+    ". . .";
+}
+
+.element-main1{
+    grid-area: element-main1;
+}
+
+.main2{
+    column-gap: 10px;
+    row-gap: 16px;
+    grid-area: main2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "element-main2-1 . element-main2-2"
+    ". . ."
+    "element-main2-3 . element-main2-4";
+}
+
+.element-main2-1{
+    grid-area: element-main2-1;
+}
+
+.element-main2-2{
+    grid-area: element-main2-2;
+}
+
+.element-main2-3{
+    grid-area: element-main2-3;
+}
+
+.element-main2-4{
+    grid-area: element-main2-4;
+}
+
+.minifooter1{
+    grid-area: minifooter1;
+}
+
+.minifooter2{
+    grid-area: minifooter2;
+}
+
+.minifooter3{
+    grid-area: minifooter3;
+}
+
+.minifooter4{
+    grid-area: minifooter4;
+}
+
+.footer1{
+    grid-area: footer1;
+}
+
+.footer2{
+    grid-area: footer2;
+}
+
+
+
+
+.green{
+    background-color: green;
+}
+
+.pink{
+    background-color: pink; 
+}
+
+.blue{
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+
+.chocolate{
+    background-color: chocolate;
+}
+
+.fuchsia{
+    background-color: fuchsia;
+}
